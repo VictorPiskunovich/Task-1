@@ -1,0 +1,14 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/about";
+@import "./components/booking";
+@import "./components/booking__footer";
+@import "./components/specialties";
+@import "./components/contact";
+@import "./components/footer";

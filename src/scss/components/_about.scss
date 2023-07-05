@@ -1,0 +1,71 @@
+.section_about {
+    padding: 80px 0;
+}
+.section__header {
+    margin: 0 auto 40px;
+    text-align: center;
+    width: 1155px;
+    height: 475px;
+    top: 900px;
+    left: 143px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+}
+.section__header  {
+    text-align: right;
+}
+.section__suptitle {
+    font-family: Acme;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+   
+    margin-right: auto;
+}
+.rectangle2{
+    margin-top: 10px;
+    height: 5.107px;
+    background: url("../img/Rectangle.png") center no-repeat;
+}
+.section__text{
+    padding: 0 30px 0 0;
+    flex: 0 1 50%;
+    width: 600px;
+   /* height: 241px;*/
+    top: 1017px;
+    left: 143px;
+    border-radius: 50px;
+    margin: auto;
+
+    margin-top: 10px;
+    height: 5.107px;
+}
+.section__text_1 {
+    margin-top: 15px;
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.section__text_2 {
+    margin-top: 15px;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.about__img {
+    display: inline-block;
+    position: relative;
+    margin-left: 8px;
+    transition: transform .2s linear;
+    flex: 0 0 auto;
+    overflow: hidden;
+}

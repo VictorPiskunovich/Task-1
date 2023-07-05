@@ -1,0 +1,195 @@
+header{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url("../img/imgheader.jpg"), lightgray 50% / cover no-repeat;
+    background-size: cover;
+}
+.header_container{
+    font-size: 12px;
+}
+.header_nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    @include small-tablet {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        overflow-y: auto;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(34, 32, 32, 0.9);
+        margin-right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        transform: translateX(-100%);
+        visibility: hidden;
+        transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        /* display: none */
+        
+    }
+
+
+}
+
+
+.header_nav.menu--active {
+    visibility: visible;
+    transform: none;
+}
+.header_nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 700;
+    display: inline-block;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header_nav a:after{
+    content: "";
+    display: flex;
+    width: 100%;
+    height: 3px;
+
+    background-color: #4d89f9;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear; 
+}
+.header_nav a:hover {
+    color: #d4b91f;
+    
+}
+.logo{
+    margin-top: 25px;
+    width: 150px;
+    height: 150px;
+    background: url("../img/Vector.png") no-repeat center;
+}
+.intro{
+    padding-top: 151px;
+    padding-bottom: 225px;
+    width: 100%;
+    text-align: center;
+}
+.intro_container{
+    width: 100%;
+    color: #ffffff;
+}
+.intro_title{
+    font-size: 12px;
+    font-family: OpenSans;
+    width: 100%;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+.intro_subtitle{
+    margin-top: 90px;
+    flex-shrink: 0;
+    font-size: 96px;
+    font-family: Acme;
+    font-weight: 500;
+    line-height: 0px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    padding: 10px 20px 40px 20px;
+
+    @include small-tablet {
+        font-size: 30px;
+    }
+}
+.rectangle1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    height: 5.107px;
+    background: url("../img/Rectangle.png") center no-repeat;
+}
+.button1{
+    display: inline-block;
+    background-color: #d4b91f;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+    padding: 20px;
+    margin-right: 40px;
+    font-family: OpenSans;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    
+    &:focus {
+        outline: none;
+    }
+    
+    @include hover {
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border-color:rgba(0, 0, 0, 0.647);
+    background-color: rgba(0, 0, 0, 0.647);
+    }
+
+    &:active {
+    transition: background-color 0s ease-in-out, border-color 0s ease-in-out;
+    border-color: rgba(255, 0, 0, 0.9);
+    background-color: rgba(255, 0, 0, 0.9);
+    }
+}
+    
+
+
+.button2{
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+    padding: 20px;
+    font-family: OpenSans;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    border: 2px solid #808080;
+    text-transform: uppercase;
+
+    &:focus {
+        outline: none;
+    }
+    
+    @include hover {
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border-color:rgba(0, 0, 0, 0.647);
+    background-color: rgba(0, 0, 0, 0.647);
+    }
+
+    &:active {
+    transition: background-color 0s ease-in-out, border-color 0s ease-in-out;
+    border-color: rgba(255, 0, 0, 0.9);
+    background-color: rgba(255, 0, 0, 0.9);
+    }
+}
